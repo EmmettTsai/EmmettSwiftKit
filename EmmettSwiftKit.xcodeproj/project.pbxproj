@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		A08A004021F231E400C6E40E /* EmmettSwiftKit.h in Headers */ = {isa = PBXBuildFile; fileRef = A08A003E21F231E400C6E40E /* EmmettSwiftKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A08A854A21F23D2B0047EF10 /* EmmettTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A08A854921F23D2B0047EF10 /* EmmettTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		A08A003B21F231E400C6E40E /* EmmettSwiftKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = EmmettSwiftKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A08A003E21F231E400C6E40E /* EmmettSwiftKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EmmettSwiftKit.h; sourceTree = "<group>"; };
 		A08A003F21F231E400C6E40E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A08A854921F23D2B0047EF10 /* EmmettTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmmettTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,6 +48,7 @@
 		A08A003D21F231E400C6E40E /* EmmettSwiftKit */ = {
 			isa = PBXGroup;
 			children = (
+				A08A854921F23D2B0047EF10 /* EmmettTest.swift */,
 				A08A003E21F231E400C6E40E /* EmmettSwiftKit.h */,
 				A08A003F21F231E400C6E40E /* Info.plist */,
 			);
@@ -95,6 +98,7 @@
 				TargetAttributes = {
 					A08A003A21F231E400C6E40E = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
 					};
 				};
 			};
@@ -130,6 +134,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A08A854A21F23D2B0047EF10 /* EmmettTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -265,6 +270,7 @@
 					"$(ARCHS_STANDARD)",
 					armv7s,
 				);
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEAD_CODE_STRIPPING = NO;
@@ -284,6 +290,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.emmett.EmmettSwiftKit;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -296,6 +303,7 @@
 					"$(ARCHS_STANDARD)",
 					armv7s,
 				);
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEAD_CODE_STRIPPING = NO;
